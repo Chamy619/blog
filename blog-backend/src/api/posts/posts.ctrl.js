@@ -6,7 +6,7 @@ import sanitizeHtml from 'sanitize-html';
 const { ObjectId } = mongoose.Types;
 
 const sanitizeOption = {
-  allowedTags: ['h1', 'h2', 'b', 'i', 'u', 's', 'p', 'ul', 'ol', 'li', 'blockquote', 'a', 'img'],
+  allowedTags: ['h1', 'h2', 'b', 'i', 'u', 's', 'p', 'ul', 'ol', 'li', 'blockquote', 'a', 'img', 'strong'],
   allowedAttributes: {
     a: ['href', 'name', 'target'],
     img: ['src'],
