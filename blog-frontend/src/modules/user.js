@@ -45,7 +45,7 @@ const initialState = {
 export default handleActions(
   {
     [TEMP_SET_USER]: (state, { payload: user }) => ({ ...state, user }),
-    [CHECK_SUCCESS]: (state, { payload: user }) => ({ ...state, userError: null, user }),
+    [CHECK_SUCCESS]: (state, { payload: user }) => ({ ...state, checkError: null, user }),
     [CHECK_FAILURE]: (state, { payload: error }) => ({ ...state, user: null, checkError: error }),
     [LOGOUT]: (state) => ({ ...state, user: null }),
   },
